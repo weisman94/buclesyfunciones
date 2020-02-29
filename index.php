@@ -83,5 +83,22 @@ foreach($arreglo as $clave=>$valor) {
     echo("El valor del arreglo en la Clave: ".$clave." es: ".$valor."<br>"."<br>");
 }
 
+// Arreglos Multidimensionales (Arrreglo de arreglos - matrices)
+echo("Arreglos multidimencionales");
+echo("<br>");
+echo("<br>");
+$clientes=array(
+    'cliente1'=>array('nombre'=>"carlos",'edad'=>15,'sexo'=>"M"),
+    'cliente2'=>array('nombre'=>"jose",'edad'=>25,'sexo'=>"M"),
+    'cliente3'=>array('nombre'=>"maria",'edad'=>30,'sexo'=>"f"),
+    'cliente3'=>array('nombre'=>"sandra",'edad'=>32,'sexo'=>"f")
+);
+echo("<br>");
+print_r($clientes);
+
+foreach($clientes as $clave=>$valor) {
+    echo("la calve del arreglo es: ");
+    print_r($clave);
+}
 
 ?>
